@@ -310,8 +310,9 @@ class Hoyolab(commands.Cog):
     @commands.command(name="primogems", aliases=["примогемы"])
     async def primogems_link(self, ctx):
         link_1 = ("<https://docs.google.com/spreadsheets/d/1l9HPu2cAzTckdXtr7u-7D8NSKzZNUqOuvbmxERFZ_6w/edit#gid=955728278>")
+        link_2 = ("<https://docs.google.com/spreadsheets/d/e/2PACX-1vRIWjzFwAZZoBvKw2oiNaVpppI9atoV0wxuOjulKRJECrg_BN404d7LoKlHp8RMX8hegDr4b8jlHjYy/pubhtml>")
         answer = _("links to primogems")
-        text = "\n".join([answer, link_1])
+        text = "\n".join([answer, link_1, link_2])
         return await ctx.reply(text)
 
     @commands.command(name="forum", aliases=["форум"])
